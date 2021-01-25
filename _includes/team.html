@@ -1,51 +1,56 @@
 <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About Me</h2>
-                </div>
+<section id="team" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">About Me</h2>
             </div>
-            <div class="row">
-                {% for member in site.people %}
-                <div class="col-sm-12 hid">
-                    <div class="row">
-                        <div class="col-sm-4 col-sm-offset-4 text-center">
-                            <div class="team-member">
-                                <img src="img/team/{{ member.pic }}.jpg" class="img-responsive" alt="">
-                                <h4>{{ member.name }}</h4>
-                                <p class="text-muted">{{ member.position }}</p>
-                                <ul class="list-inline social-buttons">
-                                    {% for network in member.social %}
-                                    <li>
-                                        <a href="{{ network.url }}">
-                                            <i class="fa fa-{{ network.title }}"></i>
-                                        </a>
-                                    </li>
-                                    {% endfor %}
+        </div>
+        <div class="row">
+            {% for member in site.people %}
+            <div class="col-sm-12 hid">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4 text-center">
+                        <div class="team-member">
+                            <img src="img/team/{{ member.pic }}.jpg" class="img-responsive" alt="">
+                            <h4>{{ member.name }}</h4>
+                            <p class="text-muted">{{ member.position }}</p>
+                            <ul class="list-inline social-buttons">
+                                {% for network in member.social %}
+                                <li>
+                                    <a href="{{ network.url }}">
+                                        <i class="fa fa-{{ network.title }}"></i>
+                                    </a>
+                                </li>
+                                {% endfor %}
 
-                                </ul>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                {% endfor %}
             </div>
-            <div class="text-justify text-muted col-md-8 col-md-offset-2">
-                <p>I am a Level 3 qualified Personal Trainer.</p>
-                <p>I specialise in pre and post-natal exercise, nutritional coaching, weight training and body weight training.</p>
-                <p>With 4 years of experience in London, I am now based in Basingstoke, Hampshire. I conduct COVID safe home and park visits where all equipment is provided and is sanitised in between sessions. I am also based at CrossFit Basingstoke where I can train you for no extra cost.</p>
-                <p>Details of sessions are described below, to book a consultation or if you have any questions please:</p>
-                <p class="text-center"> <a href="mailto:&#112;&#097;&#114;&#107;&#101;&#114;&#046;&#115;&#097;&#114;&#097;&#104;&#112;&#116;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" class="btn btn-info" role="button">Contact Me</a></p>
-                <br>
-                <h5>Qualifications</h5>
-                <ul>
-                    <li>Active IQ Level 3 Diploma in Fitness Instructing and Personal Training</li>
-                    <li>NASM Pre & Post Natal Specialist</li>
-                    <li>NASM Nutritional Coach</li>
-                    <li>Train Fitness Indoor Cycling Coach</li>
-                    <li>Train Fitness Exercise Referral Coach (pending qualification 2021)</li>
-                </ul>
-            </div>
+            {% endfor %}
         </div>
-    </section>
+        <div class="text-justify text-muted col-md-8 col-md-offset-2">
+            <p>I am a Level 3 qualified Personal Trainer. I specialise in pre and post-natal exercise, nutritional
+                coaching, weight training and body weight training.</p>
+            <p>With 4 years of experience in London, I am now based
+                in Basingstoke, Hampshire. I conduct COVID safe home and park visits where all equipment is provided and
+                is sanitised in between sessions. I am also based at CrossFit Basingstoke where I can train you for no
+                extra cost.</p>
+            <p>Details of sessions are described below, to book a consultation or if you have any questions please:</p>
+            <p class="text-center"><a
+                    href="mailto:&#112;&#097;&#114;&#107;&#101;&#114;&#046;&#115;&#097;&#114;&#097;&#104;&#112;&#116;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+                    class="btn btn-info" role="button">Contact Me</a></p>
+            <br>
+            <h5>Qualifications</h5>
+            <ul>
+                <li>Active IQ Level 3 Diploma in Fitness Instructing and Personal Training</li>
+                <li>NASM Pre & Post Natal Specialist</li>
+                <li>NASM Nutritional Coach</li>
+                <li>Train Fitness Indoor Cycling Coach</li>
+                <li>Train Fitness Exercise Referral Coach (pending qualification 2021)</li>
+            </ul>
+        </div>
+    </div>
+</section>

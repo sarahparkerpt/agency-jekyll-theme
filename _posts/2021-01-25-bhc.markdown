@@ -1,0 +1,15 @@
+---
+title: Basingstoke Hockey Club
+subtitle: Basingstoke HC Mens 1XI
+layout: default
+modal-id: 1
+date: 2021-01-25
+img: m1s.jpg
+thumbnail: m1s.jpg
+alt: image-alt
+project-date: August 2020
+client: Basingstoke Hockey Club
+category: Pre-Season Fitness
+description: We ran a successful pre-season programme with Sarah during lockdown via Zoom. The classes were engaging and motivating and had everyone involved, the team particularly liked the competitive side of the exercise.
+
+---
